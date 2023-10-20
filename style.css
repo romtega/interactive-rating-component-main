@@ -1,0 +1,140 @@
+:root {
+  --crl-orange: hsl(25, 97%, 53%);
+  --crl-white: hsl(0, 0%, 100%);
+  --crl-light-gray: hsl(217, 12%, 63%);
+  --crl-gray: hsl(216, 12%, 54%);
+  --crl-strong-gray: hsl(216, 12%, 22%);
+  --crl-light-dark: hsl(213, 19%, 18%);
+  --crl-dark: hsl(216, 12%, 8%);
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background-color: var(--crl-dark);
+  color: var(--crl-gray);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.section-rating,
+.section-thankyou {
+  width: 400px;
+  background-color: var(--crl-light-dark);
+  border-radius: 25px;
+  padding: 3rem 3.4rem;
+}
+
+.section-rating {
+  display: grid;
+  gap: 3rem;
+}
+
+.rating-icon {
+  width: fit-content;
+  background-color: var(--crl-strong-gray);
+  padding: 1.4rem;
+  border-radius: 50%;
+}
+
+.text {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.heading-primary {
+  color: var(--crl-white);
+  font-weight: var(--fw-bold);
+  font-size: 2.6rem;
+}
+
+.rating {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-number {
+  cursor: pointer;
+  background-color: var(--crl-strong-gray);
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+
+.rating-number:hover {
+  background-color: var(--crl-light-gray);
+  color: var(--crl-white);
+}
+
+.rating-number:focus {
+  background-color: var(--crl-orange);
+  color: var(--crl-white);
+}
+
+.btn-submit {
+  cursor: pointer;
+  background-color: var(--crl-orange);
+  color: var(--crl-white);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  letter-spacing: 1.4px;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: var(--crl-white);
+  color: var(--crl-orange);
+}
+
+.section-thankyou {
+  display: grid;
+  align-items: center;
+}
