@@ -33,9 +33,11 @@ main {
   display: grid;
   place-content: center;
   min-height: 100vh;
+  margin: 1rem;
 }
 
-svg {
+svg,
+img {
   display: block;
   max-width: 100%;
 }
@@ -61,12 +63,12 @@ h1 {
   width: 400px;
   background-color: var(--crl-light-dark);
   border-radius: 25px;
-  padding: 3rem 3.4rem;
 }
 
 .section-rating {
   display: grid;
   gap: 3rem;
+  padding: 3rem 3.4rem;
 }
 
 .rating-icon {
@@ -136,5 +138,40 @@ h1 {
 
 .section-thankyou {
   display: grid;
-  align-items: center;
+  gap: 2.4rem;
+  justify-items: center;
+  text-align: center;
+  padding: 4.4rem 3.4rem;
+}
+
+.final-rating {
+  background-color: var(--crl-strong-gray);
+  color: var(--crl-orange);
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--crl-orange);
+}
+
+@media (max-width: 425px) {
+  .section-rating,
+  .section-thankyou {
+    width: 325px;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .rating-number {
+    width: 3rem;
+    height: 3rem;
+    padding: 2.2rem;
+  }
 }
