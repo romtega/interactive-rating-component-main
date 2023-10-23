@@ -23,6 +23,11 @@ function closeThankyou() {
 for (let i = 0; i < rating.length; i++) {
   rating[i].addEventListener("click", () => {
     rate = rating[i].innerHTML;
+
+    for (let i = 0; i < rating.length; i++) {
+      rating[i].classList.remove("orange");
+    }
+    rating[i].classList.add("orange");
   });
 }
 

@@ -113,9 +113,10 @@ h1 {
   color: var(--crl-white);
 }
 
-.rating-number:focus {
-  background-color: var(--crl-orange);
+.orange {
+  background-color: var(--crl-orange) !important;
   color: var(--crl-white);
+  font-weight: var(--fw-bold);
 }
 
 .btn-submit {
